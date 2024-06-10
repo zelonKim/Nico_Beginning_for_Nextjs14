@@ -1,0 +1,49 @@
+movie-info.module.css
+.container {
+display: grid;
+grid-template-columns: 1fr 2fr;
+gap: 50px;
+width: 80%;
+margin: 0 auto;
+}
+
+.poster {
+border-radius: 20px;
+max-width: 70%;
+place-self: center;
+}
+
+.title {
+color: white;
+font-size: 36px;
+font-weight: 600;
+}
+
+.info {
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+gap: 20px;
+}
+
+movie-videos.module.css
+
+.container {
+width: 80%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+margin-top: 100px;
+padding-bottom: 100px;
+}
+
+.container iframe {
+border-radius: 10px;
+opacity: 0.8;
+transition: opacity 0.2s ease-in-out;
+}
+
+.container iframe:hover {
+opacity: 1;
+}
